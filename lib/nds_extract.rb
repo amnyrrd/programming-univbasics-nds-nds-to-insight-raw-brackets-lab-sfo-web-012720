@@ -7,8 +7,8 @@ def directors_totals(nds)
   row_index = 0
   while row_index < directors_database.length do
     column_index = 0
+    totals = 0
     while column_index < directors_database[row_index][:movies].length do
-        totals = 0
         totals += directors_database[row_index][:movies][column_index][:worldwide_gross]
         column_index += 1
     end
